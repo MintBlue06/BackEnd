@@ -1,9 +1,6 @@
 package com.app.J17.SpringBoot_3.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import java.io.Serializable;
@@ -11,6 +8,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Entity
+//@Table(name="habilidad")
 public class Habilidad implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

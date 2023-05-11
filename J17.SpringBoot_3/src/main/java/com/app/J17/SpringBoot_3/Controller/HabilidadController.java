@@ -26,16 +26,16 @@ public class HabilidadController {
     public void crearHabilidad (@RequestBody Habilidad habilidad){
         IhabilidadService.crearHabilidad(habilidad);
     }
-    @DeleteMapping("/delete/habilidad/{id}")
+    @DeleteMapping("/delete/habilidad/{id_habilidad}")
     public void eliminarHabilidad (@PathVariable int id_habilidad){
         IhabilidadService.eliminarHabilidad(id_habilidad);
     }
-    @GetMapping ("/find/habilidad/{id}")
+    @GetMapping ("/find/habilidad/{id_habilidad}")
     public Habilidad buscarHabilidad (@PathVariable int id_habilidad){
         return IhabilidadService.buscarHabilidad(id_habilidad);
     }
     //list or responseentity
-    @PutMapping
+    @PutMapping ("/update/habilidad")
     public Habilidad actualizarHabilidad (@RequestBody Habilidad habilidad){
         return IhabilidadService.actualizarHabilidad(habilidad);
     }
