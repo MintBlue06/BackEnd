@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+//@RequestMapping(path="/api/habilidad")
+//@CrossOrigin(origins="http://localhost:4200")
+// http://localhost:4200/
 public class HabilidadController {
     //List<Habilidad> listaHabilidad = new ArrayList();
     @Autowired

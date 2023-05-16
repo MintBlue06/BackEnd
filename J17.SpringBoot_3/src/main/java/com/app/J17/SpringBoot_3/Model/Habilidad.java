@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Entity
-//@Table(name="habilidad")
+@Table(name="habilidad")
 public class Habilidad implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
