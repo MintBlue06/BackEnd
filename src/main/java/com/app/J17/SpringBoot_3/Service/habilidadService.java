@@ -35,5 +35,4 @@ public class habilidadService implements iHabilidadService{
     public Habilidad actualizarHabilidad(Habilidad habilidad) {
         return habilidadRepository.save(habilidad);
     }
-    //actualizar
 }

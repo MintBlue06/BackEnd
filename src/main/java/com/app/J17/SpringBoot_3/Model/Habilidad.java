@@ -16,7 +16,7 @@ public class Habilidad implements Serializable {
     private String nombre_herramienta;
     private float nivel;
 
-    public Habilidad(){}
+    //public Habilidad(){}
 
     public Habilidad(int id_habilidad, String nombre_herramienta, float nivel){
         this.id_habilidad = id_habilidad;
