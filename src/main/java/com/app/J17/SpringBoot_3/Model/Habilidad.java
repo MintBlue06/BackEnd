@@ -9,9 +9,8 @@ import java.io.Serializable;
 @Setter
 @Entity
 @Table(name="habilidad")
-//Serializable (borrar)?
 //implements Serializable
-public class Habilidad {
+public class Habilidad implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_habilidad;
