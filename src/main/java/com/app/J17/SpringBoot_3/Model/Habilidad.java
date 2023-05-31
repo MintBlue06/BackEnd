@@ -9,14 +9,16 @@ import java.io.Serializable;
 @Setter
 @Entity
 @Table(name="habilidad")
-public class Habilidad implements Serializable {
+//Serializable (borrar)?
+//implements Serializable
+public class Habilidad {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_habilidad;
     private String nombre_herramienta;
     private float nivel;
 
-    //public Habilidad(){}
+    public Habilidad(){}
 
     public Habilidad(int id_habilidad, String nombre_herramienta, float nivel){
         this.id_habilidad = id_habilidad;

@@ -38,7 +38,6 @@ public class HabilidadController {
     public Habilidad buscarHabilidad (@PathVariable int id_habilidad){
         return IhabilidadService.buscarHabilidad(id_habilidad);
     }
-    //list or responseentity
     @PutMapping ("/update/habilidad")
     public Habilidad actualizarHabilidad (@RequestBody Habilidad habilidad){
         return IhabilidadService.actualizarHabilidad(habilidad);
