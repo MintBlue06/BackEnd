@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path="/api/habilidad")
-@CrossOrigin(origins="https://portfolio-frontend-ap01.web.app")
+@CrossOrigin(origins={"https://portfolio-frontend-ap01.web.app/", "http://localhost:4200/"})
 //https://portfolio-frontend-ap01.web.app/
 // http://localhost:4200/
 public class HabilidadController {
